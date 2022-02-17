@@ -1,6 +1,6 @@
 # Ejercicio 1 - Next Day
 
-Se quiere un método que dado una fecha (día, mes, gestión) devuelva el dia siguiente de esa fecha (día, mes ,gestión):
+Se quiere un método que dado una fecha (día, mes, gestión) devuelva el dia siguiente de esa fecha (día, mes, gestión):
 ```
 - Dato entrada  5  mayo  2020 ---->  6   mayo  2020
 - Dato entrada  28 febrero  2020 ---> 29 febrero 2020
