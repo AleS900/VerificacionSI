@@ -23,100 +23,107 @@ public class DateUtils {
         boolean boolDay = day < 32 && day > 0;
         boolean boolMonth = monthsArr.contains(month.toLowerCase());
         boolean boolYear = year > 0;
+        int max31=31;
+        int max30=30;
+        int max28=28;
+        int max29=29;
+        int max;
+
+        if(mth.equals("abril") || mth.equals("junio") || mth.equals("septiembre") || mth.equals("noviembre")){
+            max=max30;
+        } else if(mth.equals("enero") || mth.equals("marzo") || mth.equals("mayo") || mth.equals("julio") || mth.equals("agosto") || mth.equals("octubre") || mth.equals("diciembre") ){
+            max=max31;
+        } else if (!mth.equals("febrero")){
+            max=max30;
+        } else if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+            max=max29;
+        } else {
+            max=max28;
+        }
 
         if (boolDay && boolMonth && boolYear) {
             switch (month.toLowerCase()){
                 case "enero":
-                    if (day == 31){
+                    if (day == max){
                         msg = 1 + " febrero " + year;
                     }else {
                         msg = (day+1) + " " + mth + " " + year;
                     }
                     break;
                 case "febrero":
-                    if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
-                        if (day > 29){
-                            msg = "Dia Incorrecto";
-                        }else if (day == 29){
-                            msg = 1 + " marzo " + year;
-                        }else {
-                            msg = (day+1) + " " + mth + " " + year;
-                        }
+                    if (day > max){
+                        msg = "Dia Incorrecto";
+                    }else if (day == max){
+                        msg = 1 + " marzo " + year;
                     }else {
-                        if (day > 28){
-                            msg = "Dia Incorrecto";
-                        }else if (day == 28){
-                            msg = 1 + " marzo " + year;
-                        }else {
-                            msg = (day+1) + " " + mth + " " + year;
-                        }
+                        msg = (day+1) + " " + mth + " " + year;
                     }
                     break;
                 case "marzo":
-                    if (day == 31){
+                    if (day == max){
                         msg = 1 + " abril " + year;
                     }else {
                         msg = (day+1) + " " + mth + " " + year;
                     }
                     break;
                 case "abril":
-                    if (day == 30){
+                    if (day == max){
                         msg = 1 + " mayo " + year;
                     }else {
                         msg = (day+1) + " " + mth + " " + year;
                     }
                     break;
                 case "mayo":
-                    if (day == 31){
+                    if (day == max){
                         msg = 1 + " junio " + year;
                     }else {
                         msg = (day+1) + " " + mth + " " + year;
                     }
                     break;
                 case "junio":
-                    if (day == 30){
+                    if (day == max){
                         msg = 1 + " julio " + year;
                     }else {
                         msg = (day+1) + " " + mth + " " + year;
                     }
                     break;
                 case "julio":
-                    if (day == 31){
+                    if (day == max){
                         msg = 1 + " agosto " + year;
                     }else {
                         msg = (day+1) + " " + mth + " " + year;
                     }
                     break;
                 case "agosto":
-                    if (day == 31){
+                    if (day == max){
                         msg = 1 + " septiembre " + year;
                     }else {
                         msg = (day+1) + " " + mth + " " + year;
                     }
                     break;
                 case "septiembre":
-                    if (day == 30){
+                    if (day == max){
                         msg = 1 + " octubre " + year;
                     }else {
                         msg = (day+1) + " " + mth + " " + year;
                     }
                     break;
                 case "octubre":
-                    if (day == 31){
+                    if (day == max){
                         msg = 1 + " noviembre " + year;
                     }else {
                         msg = (day+1) + " " + mth + " " + year;
                     }
                     break;
                 case "noviembre":
-                    if (day == 30){
+                    if (day == max){
                         msg = 1 + " diciembre " + year;
                     }else {
                         msg = (day+1) + " " + mth + " " + year;
                     }
                     break;
                 case "diciembre":
-                    if (day == 31){
+                    if (day == max){
                         msg = 1 + " enero " + (year+1);
                     }else {
                         msg = (day+1) + " " + mth + " " + year;
