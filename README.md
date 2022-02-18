@@ -13,6 +13,7 @@ En programación, una prueba unitaria es una forma de comprobar el correcto func
 - Ejercicio 1: Next Day
   - [DailyUtils](https://github.com/AleS900/VerificacionSI/tree/main/src/main/java/ejercicio1)
   - [DailyUtilsTest](https://github.com/AleS900/VerificacionSI/blob/main/src/test/java/ejercicio1Test)
-- Ejercicio 1: Next Day
+ </br>
+- Ejercicio 2: Primes
   - [Generator / PrimoUtils](https://github.com/AleS900/VerificacionSI/tree/main/src/main/java/ejercicio2)
   - [NumberTest](https://github.com/AleS900/VerificacionSI/blob/main/src/test/java/ejercicio2Test)
