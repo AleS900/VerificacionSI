@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ejercicio2Test.NumberTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-02-18T08:01:08" hostname="SANTIAGO" time="0.091">
+  <properties/>
+  <testcase name="generateNumbersTestUno()" classname="ejercicio2Test.NumberTest" time="0.073"/>
+  <testcase name="generateNumbersTestNoPrimo2()" classname="ejercicio2Test.NumberTest" time="0.001"/>
+  <testcase name="generateNumbersTestPrimo()" classname="ejercicio2Test.NumberTest" time="0.002"/>
+  <testcase name="generateNumbersTestNoPrimo()" classname="ejercicio2Test.NumberTest" time="0.001"/>
+  <testcase name="generateNumbersTestException()" classname="ejercicio2Test.NumberTest" time="0.004"/>
+  <testcase name="generateNumbersTestPrimo2()" classname="ejercicio2Test.NumberTest" time="0.002"/>
+  <testcase name="generateNumbersTestException2()" classname="ejercicio2Test.NumberTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
