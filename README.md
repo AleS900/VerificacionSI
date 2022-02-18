@@ -12,8 +12,7 @@ Cada ejercicio y/o carpeta de archivos contiene un archivo **README** separado d
 En programación, una prueba unitaria es una forma de comprobar el correcto funcionamiento de una unidad de código. Por ejemplo en diseño estructurado o en diseño funcional una función o un procedimiento, en diseño orientado a objetos una clase.
 - Ejercicio 1: Next Day
   - [DailyUtils](https://github.com/AleS900/VerificacionSI/tree/main/src/main/java/ejercicio1)
-  - [DailyUtilsTest](https://github.com/AleS900/VerificacionSI/blob/main/src/test/java/ejercicio1Test)
- </br>
+  - [DailyUtilsTest](https://github.com/AleS900/VerificacionSI/blob/main/src/test/java/ejercicio1Test)</br>
 - Ejercicio 2: Primes
   - [Generator / PrimoUtils](https://github.com/AleS900/VerificacionSI/tree/main/src/main/java/ejercicio2)
   - [NumberTest](https://github.com/AleS900/VerificacionSI/blob/main/src/test/java/ejercicio2Test)
