@@ -9,7 +9,7 @@ número primo.
   2 4 6 8 10
 - Dato entrada  21 --- No es primo
   1 3 5 .......... 21
-- Dato entrada  8  --- No es primo
+- Dato entrada  8  --- No es primo 
   1 3 5 7
 - Exception ...
 ```
