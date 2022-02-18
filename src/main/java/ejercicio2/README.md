@@ -14,16 +14,18 @@ número primo.
 - Exception ...
 ```
 ## Estrucutura
-```
+
 Generador
+```
 getNumberValues(int input){
    lógica
    esPrimo()
    lógica
    return ()
 }
-
+```
 PrimoUtil()
+```
 esPrimo(n){
     return false;
 }
